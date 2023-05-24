@@ -4,15 +4,22 @@
 body {
   font-family: "Open Sans", sans-serif;
   color: #272829;
+  background-image: linear-gradient(90deg, #A4C29B, #FFD5C1);
+}
+
+#evdslogo {
+  filter: invert(88%) sepia(2%) saturate(1436%) hue-rotate(314deg) brightness(105%) contrast(109%);
+  margin: 25px 25px 25px 25px;
+  position: fixed;
 }
 
 a {
-  color: #0563bb;
+  color: #FFF1F1;
   text-decoration: none;
 }
 
 a:hover {
-  color: #067ded;
+  color: #632E14;
   text-decoration: none;
 }
 
@@ -69,7 +76,6 @@ h6 {
   bottom: 0;
   z-index: 9999;
   overflow: hidden;
-  background: #fff;
 }
 
 #preloader:before {
@@ -203,7 +209,7 @@ h6 {
 .nav-menu .active:focus,
 .nav-menu li:hover>a {
   color: #fff;
-  background: #0563bb;
+  background: #632E14;
 }
 
 .nav-menu a:hover span,
@@ -266,7 +272,7 @@ h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/hero-bg.jpg") top right no-repeat;
+  /*background: url("") top right no-repeat;*/
   background-size: cover;
   position: relative;
 }
@@ -279,7 +285,7 @@ h6 {
 
 #hero:before {
   content: "";
-  background: rgba(255, 255, 255, 0.8);
+  /* background: rgba(255, 255, 255, 0.8); */
   position: absolute;
   bottom: 0;
   top: 0;
@@ -292,11 +298,11 @@ h6 {
   font-size: 64px;
   font-weight: 700;
   line-height: 56px;
-  color: #45505b;
+  color: #FFF1F1;
 }
 
 #hero p {
-  color: #45505b;
+  color: #FFF1F1;
   margin: 15px 0 0 0;
   font-size: 26px;
   font-family: "Poppins", sans-serif;
@@ -355,13 +361,13 @@ section {
 }
 
 .section-title h2 {
-  font-size: 32px;
+  font-size: 50px;
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
-  color: #45505b;
+  color: #FFF1F1;
 }
 
 .section-title h2::before {
@@ -381,7 +387,7 @@ section {
   display: block;
   width: 40px;
   height: 3px;
-  background: #0563bb;
+  background: #632E14;
   bottom: 0;
   left: calc(50% - 20px);
 }
@@ -396,7 +402,7 @@ section {
 .about .content h3 {
   font-weight: 700;
   font-size: 26px;
-  color: #728394;
+  color: #FFF1F1;
 }
 
 .about .content ul {
@@ -511,14 +517,15 @@ section {
   font-weight: 700;
   margin-top: 20px;
   margin-bottom: 20px;
-  color: #45505b;
+  color: #FFF1F1 ;
 }
 
 .resume .resume-item {
   padding: 0 0 20px 20px;
   margin-top: -2px;
-  border-left: 2px solid #0563bb;
+  border-left: 2px solid #632E14;
   position: relative;
+  color: #632E14;
 }
 
 .resume .resume-item h4 {
@@ -527,13 +534,12 @@ section {
   font-weight: 600;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
-  color: #0563bb;
+  color: #632E14;
   margin-bottom: 10px;
 }
 
 .resume .resume-item h5 {
   font-size: 16px;
-  background: #f7f8f9;
   padding: 5px 15px;
   display: inline-block;
   font-weight: 600;
@@ -560,8 +566,8 @@ section {
   border-radius: 50px;
   left: -9px;
   top: 0;
-  background: #fff;
-  border: 2px solid #0563bb;
+  background: #FFF1F1;
+  border: 2px solid #632E14;
 }
 
 /*--------------------------------------------------------------
@@ -576,7 +582,6 @@ section {
   margin: 0 auto 25px auto;
   list-style: none;
   text-align: center;
-  background: #fff;
   border-radius: 50px;
   padding: 2px 15px;
 }
@@ -585,18 +590,18 @@ section {
   cursor: pointer;
   display: inline-block;
   padding: 10px 15px;
-  font-size: 14px;
+  font-size: 20px;
   font-weight: 600;
   line-height: 1;
   text-transform: uppercase;
-  color: #272829;
+  color: #FFF1F1 ;
   margin-bottom: 5px;
   transition: all 0.3s ease-in-out;
 }
 
 .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
-  color: #0563bb;
+  color: #632E14;
 }
 
 .portfolio #portfolio-flters li:last-child {
@@ -1143,8 +1148,6 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #f7f8f9;
-  color: #45505b;
   font-size: 14px;
   text-align: center;
   padding: 30px 0;
@@ -1152,6 +1155,7 @@ section {
 
 #footer h3 {
   font-size: 36px;
+  color: #FFF1F1;
   font-weight: 700;
   position: relative;
   font-family: "Poppins", sans-serif;
@@ -1161,9 +1165,7 @@ section {
 
 #footer p {
   font-size: 15;
-  font-style: italic;
-  padding: 0;
-  margin: 0 0 40px 0;
+  color: #632E14;
 }
 
 #footer .social-links {
