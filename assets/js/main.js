@@ -163,7 +163,7 @@
   }
 
   /**
-   * Porfolio isotope and filter
+   * Portfolio isotope and filter
    */
   window.addEventListener('load', () => {
     let portfolioContainer = select('.portfolio-container');
@@ -173,6 +173,10 @@
       });
 
       let portfolioFilters = select('#portfolio-flters li', true);
+
+      portfolioIsotope.arrange({
+          filter: '.filter-featured'
+        });
 
       on('click', '#portfolio-flters li', function(e) {
         e.preventDefault();
